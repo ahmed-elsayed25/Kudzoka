@@ -1,0 +1,803 @@
+/* ---------------- Main   ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ---------------- Main   ---------------- */
+html{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ---------------- Header ---------------- */
+header {
+  width: 100%;
+  height: 98px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px 0px;
+  /* background-color: aquamarine; */
+}
+.headerBackground{
+    position: absolute;
+    width: 100%;
+    height:722px;
+    z-index: -1000;
+}
+.Header-left {
+  display: flex;
+  align-items: center;
+}
+.Header-left img {
+  width: 130px;
+  height: auto;
+}
+.Header-left a {
+  text-decoration: none;
+  color: #333333;
+  margin-left: 12px;
+  font-size: 1.1em;
+  font-weight: 450;
+  position: relative;
+  padding: 4px 8px;
+  transition: all 0.5s ease;
+}
+.Header-left a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  height: 2px;
+  background-color: #c103f6;
+  bottom: -1px;
+}
+.Header-left a:hover::before {
+  width: 100%;
+}
+.Header-left a:hover {
+  color: #b219db;
+}
+.Header-right {
+  display: flex;
+  align-items: center;
+}
+.Header-right a {
+  background-image: url("image/login_button_bg.png");
+  padding: 9px 43px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #333;
+}
+.Header-right a:hover{
+  color: #b219db;
+  text-decoration: underline;
+}
+/* ---------------- Header ---------------- */
+
+/* ---------------- Main   ---------------- */
+Main{
+  position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 100px;
+}
+.Main-left{
+  margin: 180px 0 0 15px;
+
+}
+.Main-left h3{
+    font-size: 55px;
+    color: #637279;
+    font-weight: 600;
+    margin-bottom: 15px;
+  
+}
+.Main-left p{
+    font-size: 28px;
+    color: #afafaf;
+    width: 850px;
+}
+.Main-left span{
+    color: #7a3d8a;
+}
+.Main-right{
+    position: relative;
+    width: 50%;
+    
+}
+.Main-right .M-background{
+    width: 100%;
+}
+.Main-right .M-Man{
+    position: absolute;
+    width: 45%;
+    top: 0;
+    left: 25%;
+}
+.Main-right .M-Cloud{
+    position: absolute;
+    width: 60%;
+    top: 60%;
+    left: 20%;
+}
+.waves{
+width: 90%;
+position: absolute;
+top:76%;
+left: -18%;
+}
+/* ---------------- Main   ---------------- */
+
+/* ---------------- second  ---------------- */
+.second{
+  position: relative;
+  text-align: center;
+  padding: 0px 100px;
+  height: 120vh;
+}
+.background {
+  position: absolute;
+  width: 65%;
+  top: 8%;
+  left: 22%;
+  height: 60%;
+}
+.cont div {
+  width: 400px;
+}
+.cont div img {
+  width: 250px;
+}
+.cont div h3 {
+  color: #7c7c7c;
+  font-size: 25px;
+}
+.cont div p {
+  color: #979797;
+  font-size: 20px;
+  line-height: 35px;
+}
+.cont .left {
+  position: absolute;
+  top: 16%;
+  left: 10%;
+}
+.cont .center {
+  position: absolute;
+  top: 32%;
+  left: 40%;
+}
+.cont .right {
+  position: absolute;
+  top: 65%;
+  right: 12%;
+}
+.bottom {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+.detals {
+  position: relative;
+}
+.detals img {
+  width: 350px;
+}
+.detals div {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  text-align: left;
+}
+.detals div p {
+  color: white;
+  font-size: 25px;
+}
+.detals div h3 {
+  color: white;
+  font-size: 50px;
+  font-weight: 400;
+}
+/* ---------------- second  ---------------- */
+
+/* ---------------- three  ---------------- */
+.three{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+
+
+}
+.cont-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont-img img{
+  width: 250px;
+}
+.cont-img .mid img{
+  width: 570px;
+  margin-top: -90px;
+}
+.cont-img div{
+  margin: 0 20px;
+}
+.cont-img i{
+  font-size: 2em;
+  color: #33333369;
+  position: relative;
+  bottom: 80px;
+}
+.detals{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  text-align: center;
+ 
+}
+.detals h1{
+color: #858484dc;
+font-size: 1.6em;
+}
+.detals p{
+  margin-top: 20px;
+width: 240px;
+color: #979797;
+font-size: 1.1em;
+}
+/* ---------------- three  ---------------- */
+
+/* ---------------- footer  ---------------- */
+ footer{
+position: relative;
+height: 80vh;
+overflow: hidden;
+
+}
+footer .footerBackground{
+  position: absolute;
+  width: 116%;
+  height: 150%;
+  left: -3%;
+ 
+}
+.footer-right{
+  position: absolute;
+  width: 770px;
+  right: 5%;
+  bottom: 0;
+}
+.footer-left{
+  position: absolute;
+  width: 770px;
+  left: 10%;
+  bottom: 11%;
+}
+.store{
+  display: flex;
+}
+.app-store{
+  width: 130px;
+  height: 53px;
+  background-color: white;
+  display:flex;
+  border-radius: 50px;
+  align-items: center;
+  padding: 0 15px;
+  margin-right:40px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.app-store h2{
+  font-size: .8em;
+  color: #313131;
+  font-weight: 400;
+
+}
+.app-store h3{
+  color: #7a3d8a;
+  font-weight: 300;
+  font-size: 1em;
+}
+.icon img{
+  width: 25px;
+  height: 35px;
+  margin-right: 12px;
+}
+.links{
+  margin-top: 30px;
+}
+footer a{
+  margin-right: 15px;
+  text-decoration: none;
+  color: white;
+}
+footer a:hover{
+  color: #cc00ff;
+}
+/* ---------------- footer  ---------------- */
+
+
+
+
+
+/* start media */
+
+@media only screen and (max-width:1200px) {
+
+  /*start first section*/
+  .headerBackground {
+      height: 80vh;
+  }
+
+  .Main-left {
+      padding-top: 120px;
+  }
+
+  .Main-left h3 {
+      font-size: 45px;
+  }
+
+  .Main-left p {
+      font-size: 22px;
+  }
+
+  .waves {
+      top: 70%;
+  }
+  /*end first section*/
+
+  /*start second section*/
+  .cont div {
+      width: 300px;
+  }
+
+  .cont div img {
+      width: 200px;
+  }
+
+  .cont div p {
+      font-size: 18px;
+  }
+
+  .cont .left {
+      top: 14%;
+  }
+
+  .cont .center {
+      top: 26%;
+  }
+
+  .cont .right {
+      top: 52%;
+  }
+
+  .bottom {
+      top: 60%;
+  }
+
+  .detals img {
+      width: 300px;
+  }
+
+  .detals div h3 {
+      font-size: 40px;
+  }
+  /*end second section*/
+
+  /*start third section*/
+  .three {
+      padding-top: 10px;
+  }
+
+  .three .mainImg {
+      width: 300px;
+  }
+
+  .three .smallImg {
+      width: 200px;
+  }
+  .three i{
+     font-size: 1em;
+    
+  }
+  /*end third section*/
+
+  /*footer*/
+  footer {
+      height: 70vh;
+  }
+}
+
+@media only screen and (max-width:992px) {
+
+  /*start first section*/
+  .headerBackground {
+      height: 60vh;
+  }
+
+  .Main-left {
+      padding-top: 70px;
+  }
+
+  .Main-left h3 {
+      font-size: 35px;
+  }
+
+  .Main-left p {
+      font-size: 18px;
+      margin-bottom: 40px;
+  }
+  /*end first section*/
+
+  /*start second section*/
+    .second {
+      height: 100vh;
+  }
+
+  .cont div img {
+      width: 180px;
+  }
+
+  .cont div p {
+      font-size: 15px;
+      line-height: 20px;
+  }
+
+  .cont .right {
+      top: 49%;
+      right: 8%;
+  }
+
+  .bottom {
+      top: 65%;
+  }
+  /*end second section*/
+  .three {
+    padding-top: 50px;
+}
+
+.three .mainImg {
+    width: 200px;
+}
+
+.three .smallImg {
+    width: 150px;
+}
+.three i{
+   font-size: 1em;
+  
+}
+/*end third section*/
+
+
+  /*footer*/
+  footer {
+      height: 60vh;
+  }
+
+  footer .footer-left {
+      top: 65%;
+      left: 5%;
+  }
+
+  footer links {
+      margin-top: 10px;
+  }
+
+  .icon {
+      margin-top: 10px;
+  }
+  .footer-right{
+    width: 550px;
+    right: -5%;
+  }
+}
+
+@media only screen and (max-width:912px) {
+
+  /*navbar */
+  header a {
+      font-size: 8px;
+  }
+
+  /*first section*/
+  .headerBackground {
+      height: 400px;
+  }
+
+  .cont .left {
+      top: 17%;
+      left: 5%;
+  }
+
+  .cont .center {
+      top: 35%;
+      left: 35%;
+  }
+
+  .cont .right {
+      top: 66%;
+      right: 8%;
+  }
+
+  .bottom {
+      top: 55%;
+  }
+}
+
+@media only screen and (max-width:768px) {
+
+  /*navbar*/
+  header {
+      padding: 20px 50px 0px;
+  }
+
+  header a {
+      margin: 0 5px;
+      font-size: 15px;
+  }
+
+  header .loginBtn {
+      position: relative;
+  }
+
+  /*first section*/
+  .headerBackground {
+      height: 380px;
+  }
+
+  .Main-left h3 {
+      font-size: 25px;
+  }
+
+  .Main-left p {
+      font-size: 12px;
+  }
+
+  /*second section*/
+  .second {
+      height: 80vh;
+  }
+
+  .cont div {
+      width: 220px;
+  }
+
+  .cont div img {
+      width: 130px;
+  }
+
+  .cont div h3 {
+      font-size: 18px;
+  }
+
+  .cont div p {
+      font-size: 12px;
+  }
+
+  .cont .center {
+      top: 32%;
+  }
+
+  .cont .right {
+      top: 60%;
+  }
+
+  .bottom img {
+      width: 200px;
+  }
+
+  .bottom div p {
+      font-size: 15px;
+  }
+
+  .bottom div h3 {
+      font-size: 30px;
+  }
+
+  /*third section*/
+  .three {
+      padding-top: 10px;
+  }
+
+  .detals p {
+      font-size: 18px;
+  }
+
+  .three .detals {
+      width: 300px;
+  }
+
+  .three .smallImg {
+      width: 150px;
+  }
+
+  /*footer*/
+  footer {
+      height: 40vh;
+  }
+
+  footer links {
+      margin-top: 10px;
+  }
+
+  .icon {
+      margin-top: 10px;
+  }
+
+  footer .app-store {
+      width: 100px;
+      height: 40px;
+  }
+  footer .app-store {
+      width: 100px;
+      height: 40px;
+  }
+
+  footer .app-store p {
+      font-size: 8px;
+
+}
+}
+@media only screen and (max-width:576px) {
+
+  /*navbar*/
+  header {
+      padding: 20px 10px 0px;
+  }
+
+  header a {
+      font-size: 8px;
+  }
+
+  header img {
+      width: 70px;
+  }
+
+
+  /*first section*/
+  main {
+      padding: 0px 50px;
+  }
+
+  .headerBackground {
+      height: 250px;
+  }
+
+  .Main-left h3 {
+      font-size: 13px;
+  }
+
+  .Main-left p {
+      margin-top: 10px;
+      font-size: 8px;
+  }
+
+  /*second section*/
+  .second {
+      height: 60vh;
+  }
+
+  .background {
+      position: absolute;
+      width: 65%;
+      top: 15%;
+      left: 22%;
+      height: 35%;
+  }
+
+  .cont div {
+      width: 120px;
+  }
+
+  .cont div img {
+      width: 80px;
+  }
+
+  .cont div h3 {
+      font-size: 12px;
+  }
+
+  .cont div p {
+      font-size: 8px;
+      line-height: 8px;
+  }
+
+  .cont .left {
+      top: 20%;
+      left: 5%;
+  }
+
+  .cont .center {
+      top: 28%;
+      left: 35%;
+  }
+
+  .cont .right {
+      top: 50%;
+  }
+
+  .bottom {
+      position: absolute;
+      top: 60%;
+      left: 10%;
+  }
+
+  .detals {
+      position: relative;
+  }
+
+  .detals img {
+      width: 150px;
+  }
+
+  .detals div p {
+      font-size: 15px;
+  }
+
+  .detals div h3 {
+      font-size: 20px;
+  }
+
+  /*third section*/
+  .three {
+      padding-top: 10px;
+  }
+
+  .detals h3 {
+      font-size: 12px;
+  }
+
+  .detals p {
+      font-size: 8px;
+  }
+
+
+  .three .mainImg {
+      width: 150px;
+  }
+
+  .three .smallImg {
+      width: 100px;
+  }
+
+  /*footer*/
+  footer {
+      height: 50vh;
+  }
+
+  footer .links {
+      margin-top: 5px;
+  }
+
+  footer .footer-right {
+      display: none;
+  }
+
+  .icon {
+      margin-top: 5px;
+  }
+
+  footer .app-store {
+      width: 100px;
+      height: 40px;
+  }
+
+
+
+  footer .app-store div img {
+      width: 20px;
+  }
+
+  footer .app-store div p {
+      font-size: 8px;
+  }
+
+}
